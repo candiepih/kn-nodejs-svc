@@ -4,7 +4,7 @@ const port = process.env.PORT || "8080";
 
 app.get("/", (req, res) => {
   const name = req.query.name ?? " World!!"
-  return res.send(`Hello ${name}. Test pipeline that uses buildpacks`);
+  return res.send(`Hello ${name}. The pipeline that uses buildpacks`);
 });
 server.listen(port, function () {
   console.log(`App listening on ${port}`);
